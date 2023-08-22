@@ -13,7 +13,7 @@ class Account{
      public boolean withdrawMoney(double amount) {
         if (balance >= amount) {
             balance -= amount;
-            System.out.println("Withdrawn: $" + amount);
+            System.out.println("Withdrawn: Rs" + amount);
             return true;
         } else {
             System.out.println("Insufficient balance.");
@@ -22,7 +22,7 @@ class Account{
     }
      public void depositMoney(double amount) {
         balance += amount;
-        System.out.println("Deposited: $" + amount);
+        System.out.println("Deposited: Rs" + amount);
     }
 }
 
